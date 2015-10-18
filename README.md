@@ -1,23 +1,13 @@
 Spock Framework Example Project
 ===============================
 
-The purpose of this project is to help you get started with Spock. The project includes several example specifications and build scripts for Ant, Gradle, and Maven. It also makes it easy to create an Eclipse or IDEA project, allowing you to run the example specs from within your IDE.
+The purpose of this project is to help you get started with Spock. The project includes several example specifications and build scripts for Gradle. It also makes it easy to create an Eclipse or IDEA project, allowing you to run the example specs from within your IDE.
 
-All three builds (Ant, Gradle, Maven) will automatically download all required dependencies, compile the project, and finally run the example specs. The Gradle build goes one step further by bootstrapping itself, alleviating the need to have a build tool preinstalled.
+The Gradle build will automatically download all required dependencies, compile the project, and finally run the example specs. It also bootstraps itself, alleviating the need to have a build tool preinstalled.
 
 Prerequisites
 -------------
 - JDK 5 or higher
-- Ant 1.7 or higher (for Ant build)
-- Maven 2.x (for Maven build)
-
-Building with Ant
------------------
-Type:
-
-    ant clean test
-
-Downloaded files will be stored in the local Maven repository (typically *user_home*`/.m2/repository`).
 
 Building with Gradle
 --------------------
@@ -26,14 +16,6 @@ Type:
     ./gradlew clean test
 
 Downloaded files (including the Gradle distribution itself) will be stored in the Gradle user home directory (typically *user_home*`/.gradle`).
-
-Building with Maven
--------------------
-Type:
-
-    mvn clean test
-
-Downloaded files will be stored in the local Maven repository (typically *user_home*`/.m2/repository`).
 
 Creating an Eclipse project
 ---------------------------
