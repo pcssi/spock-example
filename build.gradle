@@ -36,5 +36,6 @@ task collectJars(type: Copy) {
     from configurations.testRuntime
 }
 
-
-
+task wrapper(type: Wrapper) {
+  distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
